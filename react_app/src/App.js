@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { jwtDecode } from 'jwt-decode';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
