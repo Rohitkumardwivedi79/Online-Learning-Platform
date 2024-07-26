@@ -11,7 +11,7 @@ function AllCourses() {
   useEffect(() => {
     async function fetchCourses() {
       try {
-        const response = await axios.get('http://localhost:5000/courses');
+        const response = await axios.get('https://online-learning-platform-6guc.onrender.com/courses');
         setCourses(response.data);
       }  catch (error) {
         if (error.response) {

@@ -20,7 +20,7 @@ function ShowContent() {
   
   const fetchCourseData = useCallback(async () => {
     try {
-      const courseContentResponse = await axios.get(`http://localhost:5000/my-courses/${courseId}`);
+      const courseContentResponse = await axios.get(`https://online-learning-platform-6guc.onrender.com/my-courses/${courseId}`);
       setCourseContent(courseContentResponse.data.lectureIds);
       setCourseName(courseContentResponse.data.title);
   
@@ -29,7 +29,7 @@ function ShowContent() {
         setSelectedLecture(courseContentResponse.data.lectureIds[0]);
       }
   
-      const completedCoursesResponse = await axios.get(`http://localhost:5000/completed-lectures`, {
+      const completedCoursesResponse = await axios.get(`https://online-learning-platform-6guc.onrender.com/completed-lectures`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
       });
       if (completedCoursesResponse.data && completedCoursesResponse.data.success === true && completedCoursesResponse.data.completedLectures) {
@@ -60,12 +60,12 @@ function ShowContent() {
   };
 
   const showPdf = (url) => {
-    window.open(`http://localhost:5000/files/${url}`, "_blank");
+    window.open(`https://online-learning-platform-6guc.onrender.com/files/${url}`, "_blank");
   };
 
   const handleOnPlay = async () => {
     try {
-      const response = await axios.post(`http://localhost:5000/add-course-progress`, {
+      const response = await axios.post(`https://online-learning-platform-6guc.onrender.com/add-course-progress`, {
         lectureId: selectedLecture._id
       }, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },

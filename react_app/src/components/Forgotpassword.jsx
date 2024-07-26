@@ -14,7 +14,7 @@ function ForgotPassword() {
 
   const handleSendOTP = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/send-otp', { email });
+      const response = await axios.post('https://online-learning-platform-6guc.onrender.com/send-otp', { email });
       if (response.data.success) {
         toast.success('OTP sent successfully!', { toastId: 'otpSent' });
         setGiveOTP(true);
@@ -31,7 +31,7 @@ function ForgotPassword() {
   
   const handleResetPassword = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/forgotpassword', { email, otp, newPassword });
+      const response = await axios.post('https://online-learning-platform-6guc.onrender.com/forgotpassword', { email, otp, newPassword });
       if (response.data.success) {
         toast.success('Password reset successfully!', { toastId: 'passwordReset' });
         setTimeout(() => navigate('/login'), 800);

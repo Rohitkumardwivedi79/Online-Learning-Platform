@@ -12,7 +12,7 @@ const Home = () => {
     useEffect(() => {
       async function fetchCourses() {
         try {
-          const response = await axios.get('http://localhost:5000/courses');
+          const response = await axios.get('https://online-learning-platform-6guc.onrender.com/courses');
           setCourses(response.data);
         } 
         catch (error) {
@@ -31,7 +31,7 @@ const Home = () => {
       if (token) {
         async function fetchEnrolledCourses() {
           try {
-            const response = await axios.get('http://localhost:5000/my-courses', {
+            const response = await axios.get('https://online-learning-platform-6guc.onrender.com/my-courses', {
               headers: { Authorization: `Bearer ${token}` },
             });
             setEnrolledCourses(response.data.map((course) => course._id));
@@ -70,7 +70,7 @@ const Home = () => {
     const handleEnrollCourse = async (courseId) => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.post(`http://localhost:5000/razorpay/payment`, { courseId }, {
+        const response = await axios.post(`https://online-learning-platform-6guc.onrender.com/razorpay/payment`, { courseId }, {
           headers: { Authorization: `Bearer ${token}` },
         });
   
@@ -88,7 +88,7 @@ const Home = () => {
             try {
               const paymentId = response.razorpay_payment_id;
               await axios.post(
-                `http://localhost:5000/razorpay/payment/success`,
+                `https://online-learning-platform-6guc.onrender.com/razorpay/payment/success`,
                 { courseId, order_id, paymentId },
                 {
                   headers: {

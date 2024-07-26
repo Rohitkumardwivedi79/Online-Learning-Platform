@@ -21,7 +21,7 @@ function Signup() {
   const handleSignup = async () => {
     try {
       const data = { username, password, email, mobile, role, otp,isClicked };
-      await axios.post('http://localhost:5000/signup', data);
+      await axios.post('https://online-learning-platform-6guc.onrender.com/signup', data);
       toast.success('User registered successfully!', { toastId: 'signupSuccess' });
       setTimeout(() => navigate('/login'), 800);
       // setGiveOTP(false)
@@ -43,7 +43,7 @@ function Signup() {
     // Assuming your backend route to send OTP is '/send-otp'
     setLoader(true)
     setIsClicked(true)
-    await axios.post('http://localhost:5000/send-otp',{email})
+    await axios.post('https://online-learning-platform-6guc.onrender.com/send-otp',{email})
       .then(response => {
         toast.success('OTP Sent Successfully')
         setGiveOTP(true)

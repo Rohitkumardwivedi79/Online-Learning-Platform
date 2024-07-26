@@ -12,10 +12,10 @@ function ShowFeedback() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const courseResponse = await axios.get(`http://localhost:5000/single-course/${courseId}`);
+        const courseResponse = await axios.get(`https://online-learning-platform-6guc.onrender.com/single-course/${courseId}`);
         setCourse(courseResponse.data);
 
-        const feedbackResponse = await axios.get(`http://localhost:5000/courses/${courseId}/feedback`);
+        const feedbackResponse = await axios.get(`https://online-learning-platform-6guc.onrender.com/courses/${courseId}/feedback`);
         const sortedFeedbacks = feedbackResponse.data.feedbacks.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
         setFeedbacks(sortedFeedbacks);
       } catch (error) {

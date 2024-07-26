@@ -18,7 +18,7 @@ function Createdcourse() {
         const token = localStorage.getItem('token');
         if (token) {
           const decodedToken = jwtDecode(token);
-          const userResponse = await axios.get(`http://localhost:5000/user/${decodedToken.userId}` , {
+          const userResponse = await axios.get(`https://online-learning-platform-6guc.onrender.com/user/${decodedToken.userId}` , {
             headers: {
               'Authorization': `Bearer ${token}`
             }
@@ -26,7 +26,7 @@ function Createdcourse() {
           const userRole = userResponse.data.user.role;
           setIsAdmin(userRole === 'admin');
 
-          const coursesResponse = await axios.get('http://localhost:5000/created-courses', {
+          const coursesResponse = await axios.get('https://online-learning-platform-6guc.onrender.com/created-courses', {
             headers: { Authorization: `Bearer ${token}` },
           });
           setCreatedCourses(coursesResponse.data);
@@ -42,7 +42,7 @@ function Createdcourse() {
   const handleDeleteCourse = async (courseId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/delete-course/${courseId}`, {
+      await axios.delete(`https://online-learning-platform-6guc.onrender.com/delete-course/${courseId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       // Update the courses list after deletion

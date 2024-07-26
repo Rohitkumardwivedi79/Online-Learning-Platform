@@ -17,7 +17,7 @@ function EditProfile() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/user/${userId}`, {
+        const response = await axios.get(`https://online-learning-platform-6guc.onrender.com/user/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -60,7 +60,7 @@ function EditProfile() {
         return;
       }
       
-      const url = `http://localhost:5000/user/${userId}`;
+      const url = `https://online-learning-platform-6guc.onrender.com/user/${userId}`;
       const data = { username,  mobile, email };
 
       const response = await axios.put(url, data, {

@@ -57,7 +57,7 @@ function AddCourse() {
 
     try {
       const result = await axios.post(
-        "http://localhost:5000/upload-files",
+        "https://online-learning-platform-6guc.onrender.com/upload-files",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -101,7 +101,7 @@ function AddCourse() {
     for (const lectureData of courseData.lectures) {
       // console.log(courseData.lectures)
       try {
-        const response = await axios.post('http://localhost:5000/add-lecture', lectureData, {
+        const response = await axios.post('https://online-learning-platform-6guc.onrender.com/add-lecture', lectureData, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -128,7 +128,7 @@ function AddCourse() {
       lectureIds: lectureIds
     };
 
-      await axios.post('http://localhost:5000/add-course', courseDataWithLectureIds, {
+      await axios.post('https://online-learning-platform-6guc.onrender.com/add-course', courseDataWithLectureIds, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

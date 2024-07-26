@@ -11,7 +11,7 @@ function MyCourses() {
   useEffect(() => {
     async function fetchMyCourses() {
       try {
-        const response = await axios.get('http://localhost:5000/my-courses', {
+        const response = await axios.get('https://online-learning-platform-6guc.onrender.com/my-courses', {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         });
         console.log("Response->",response)

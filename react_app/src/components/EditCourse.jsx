@@ -18,7 +18,7 @@ function EditCourse() {
       if (token) {
         try {
           const decodedToken = jwtDecode(token);
-          const response = await axios.get(`http://localhost:5000/user/${decodedToken.userId}`, {
+          const response = await axios.get(`https://online-learning-platform-6guc.onrender.com/user/${decodedToken.userId}`, {
             headers: {
               'Authorization': `Bearer ${token}`
             }
@@ -48,7 +48,7 @@ function EditCourse() {
 
     const fetchCourse = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/edit-course/${courseId}`, {
+        const response = await axios.get(`https://online-learning-platform-6guc.onrender.com/edit-course/${courseId}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -72,7 +72,7 @@ function EditCourse() {
       console.log(lectureData)
       if (lectureData._id) {
         try {
-          const response = await axios.post(`http://localhost:5000/update-lecture/${lectureData._id}`, lectureData, {
+          const response = await axios.post(`https://online-learning-platform-6guc.onrender.com/update-lecture/${lectureData._id}`, lectureData, {
             headers: {
               'Authorization': `Bearer ${token}`
             }
@@ -98,7 +98,7 @@ function EditCourse() {
       else{
         try {
           
-          const response = await axios.post('http://localhost:5000/add-lecture', lectureData, {
+          const response = await axios.post('https://online-learning-platform-6guc.onrender.com/add-lecture', lectureData, {
             headers: {
               'Authorization': `Bearer ${token}`
             }
@@ -125,7 +125,7 @@ function EditCourse() {
         lectureIds: lectureIDS 
       };
       // console.log(updatedCourseData);
-      await axios.put(`http://localhost:5000/edit-course/${courseId}`, updatedCourseData, {
+      await axios.put(`https://online-learning-platform-6guc.onrender.com/edit-course/${courseId}`, updatedCourseData, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -166,7 +166,7 @@ function EditCourse() {
 
   // Function to view PDF
   const showPdf = (url) => {
-    window.open(`http://localhost:5000/files/${url}`, "_blank");
+    window.open(`https://online-learning-platform-6guc.onrender.com/files/${url}`, "_blank");
   };
 
   // Function to handle file upload
@@ -176,7 +176,7 @@ function EditCourse() {
 
     try {
       const result = await axios.post(
-        "http://localhost:5000/upload-files",
+        "https://online-learning-platform-6guc.onrender.com/upload-files",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },

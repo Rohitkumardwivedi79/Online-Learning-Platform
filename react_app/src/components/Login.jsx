@@ -12,7 +12,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const data = { email, password };
-      const response = await axios.post('http://localhost:5000/login', data);
+      const response = await axios.post('https://online-learning-platform-6guc.onrender.com/login', data);
       if (response.data.token) {
         localStorage.setItem('token', response.data.token);
         toast.success('Logged in successfully!', { toastId: 'loginSuccess' });

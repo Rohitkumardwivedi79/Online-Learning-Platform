@@ -24,7 +24,7 @@ const Certificate = () => {
         const token = localStorage.getItem('token');
         
         try {
-            const response = await axios.get(`http://localhost:5000/certificate/${courseId}`, {
+            const response = await axios.get(`https://online-learning-platform-6guc.onrender.com/certificate/${courseId}`, {
               headers: {
                 'Authorization': `Bearer ${token}`
               }
