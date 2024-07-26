@@ -25,7 +25,7 @@ dotenv.config();
 
 // seed()
 
-mongoose.connect('mongodb://127.0.0.1:27017/E-Learning-Hub', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.mongoURL)
   .then(() => {
     console.log('Connected to MongoDB');
     app.listen(port, () => {

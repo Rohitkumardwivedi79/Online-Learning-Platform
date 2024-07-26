@@ -171,7 +171,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
       <div className="row    justify-content-center">
         <div className="col-md-3 mb-4" >
           <div className="card  cardsh  text-center " style={{ backgroundColor: '#e8f7f5' }}>
-            <img src="https://elevatifier.com/images/10%20(2).png" alt="Image 1"className=" rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}} />
+            <img src="https://cdn-icons-png.freepik.com/256/6378/6378522.png?ga=GA1.1.838527226.1714816922" alt="Image 1"className=" rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}} />
             <div className="card-body">
               <h5 className="card-title">Open to All</h5>
               <p className="card-text">Anyone from any domain can apply</p>
@@ -183,7 +183,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
         </div>
         <div className="col-md-3 mb-3">
           <div className="card  cardsh  text-center" style={{ backgroundColor: '#fdecef' }}>
-            <img src="https://elevatifier.com/images/9%20(2).png" alt="Image 1" className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}}/>
+            <img src="https://cdn-icons-png.freepik.com/256/70/70535.png?ga=GA1.1.838527226.1714816922&semt=ais_hybrid" alt="Image 1" className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}}/>
             <div className="card-body">
               <h5 className="card-title">Certification</h5>
               <p className="card-text">Get a Certificate for your resume & portfolio</p>
@@ -197,7 +197,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
 
           <div className="col-md-3 mb-3">
             <div className="card  cardsh  text-center"  style={{ backgroundColor: '#eceffc' }}>
-              <img src="https://elevatifier.com/images/8%20(2).png" alt="Image 1"className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}}/>
+              <img src="https://cdn-icons-png.freepik.com/256/6514/6514148.png?ga=GA1.1.1666365068.1711737096&semt=ais_hybrid" alt="Image 1"className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}}/>
               <div className="card-body">
                 <h5 className="card-title">Life Time Access</h5>
                 <p className="card-text">Nonstop learning from anywhere anytime</p>
@@ -211,7 +211,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
         
         <div className="col-md-3 mb-3">
           <div className="card  cardsh  text-center" style={{ backgroundColor: '#fef7e8' }}>
-            <img src="https://elevatifier.com/images/7%20(2).png" alt="Image 1" className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}} />
+            <img src="https://cdn-icons-png.freepik.com/256/13162/13162765.png?ga=GA1.1.838527226.1714816922&semt=ais_hybrid" alt="Image 1" className="rounded-circle mx-auto mt-3 img-thumbnail" style={{width: '80px', height: '80px', objectFit: 'cover'}} />
             <div className="card-body">
               <h5 className="card-title">Affordable Price</h5>
               <p className="card-text">Cheapest price to give learning to everone</p>
@@ -227,8 +227,8 @@ Our cutting-edge technology, coupled with our dedication to student success, set
       <div className="row  mt-4 justify-content-center">
         <div className="col-md-7 ">
         <div class="image-container1">
-    <img src="https://elevatifier.com/assets/images/about-banner.jpg" alt="Section 3 Image" class="img-fluid" />
-  </div>
+        <img style={{borderRadius:'20px'}} src="https://varthana.com/student/wp-content/uploads/2023/08/a-student-friendly-guide-to-choosing-bca-for-your-career-in-india.jpg" width='100%' alt="Section 3 Image" class="img-fluid"/>
+      </div>
             </div>
         <div className="col-md-5 d-flex align-items-center">
           <div>
@@ -292,7 +292,7 @@ Our cutting-edge technology, coupled with our dedication to student success, set
       <div className="row justify-content-center mt-4">
         <div className="col-md-10">
           <div className="img-containersh">
-          <img src="https://elevatifier.com/assets/images/video-banner.jpg" alt="Large Image" className="img-fluid rounded-start rounded-end rounded-bottom" />
+          <img src="https://static.vecteezy.com/system/resources/previews/002/990/632/large_2x/rating-and-review-of-user-satisfaction-in-mobile-apps-development-free-vector.jpg" alt="Large Image" className="img-fluid rounded-start rounded-end rounded-bottom" />
           </div>
         </div>
       </div>
