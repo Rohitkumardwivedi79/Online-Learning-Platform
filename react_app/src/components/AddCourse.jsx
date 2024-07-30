@@ -16,7 +16,7 @@ function AddCourse() {
       if (token) {
         try {
           const decodedToken = jwtDecode(token);
-          const response = await axios.get(`http://localhost:5000/user/${decodedToken.userId}`, {
+          const response = await axios.get(`https://online-learning-platform-6guc.onrender.com/user/${decodedToken.userId}`, {
             headers: {
               'Authorization': `Bearer ${token}`
             }
